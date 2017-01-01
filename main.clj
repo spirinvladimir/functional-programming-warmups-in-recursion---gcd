@@ -2,4 +2,4 @@
     (cond
         (reduce > a) (recur (list (reduce - a) (last a)))
         (reduce < a) (recur (list (- (reduce - a)) (first a)))
-        (reduce = a) (println (first a))))
+        :else (println (first a))))
